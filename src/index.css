@@ -1,0 +1,50 @@
+/* Archivo: index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables de colores para el tema claro */
+:root {
+  /* Colores de fondo */
+  --color-fondo: #F5F5F5; 
+
+  /* Colores de texto */
+  --color-texto: #333333;
+  --color-texto-secundario: #595959;
+
+  /* Colores para elementos interactivos y alertas */
+  --color-destacado: #6D6875;
+  --color-alerta: #E59849;
+  --color-exito: #689D6A;
+  --color-error: #CC444B;
+
+  /* Color para sombras */
+  --color-sombra: rgba(0, 0, 0, 0.1);
+}
+
+/* Variables de colores para el tema oscuro */
+[data-theme='oscuro'] {
+  /* Colores de fondo */
+  --color-fondo: #121212;
+
+  /* Colores de texto */
+  --color-texto: #E0E0E0;
+  --color-texto-secundario: #BDBDBD;
+
+  /* Colores para elementos interactivos y alertas */
+  --color-destacado: #918E9B;
+  --color-alerta: #F2B138;
+  --color-exito: #97A97C;
+  --color-error: #F47C7C;
+
+  /* Color para sombras */
+  --color-sombra: rgba(0, 0, 0, 0.2);
+}
+
+/* Aplicar las variables globales */
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
