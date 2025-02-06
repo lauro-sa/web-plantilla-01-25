@@ -331,6 +331,7 @@ export const datosBotonWhatsApp = {
 export const DatosComparadorImagenes = {
   titulo: "Comparación Antes y Después",
   descripcion: "Desliza para ver el cambio antes y después de la renovación.",
+  descripcion2: "ANTES ———————|——————— AHORA",
   imagenAntes: imagenAntes,
   imagenDespues: imagenDespues
 };

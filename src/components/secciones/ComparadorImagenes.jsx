@@ -22,8 +22,7 @@ const ComparadorImagenes = () => {
     // Eliminar partículas después de 300ms
     setTimeout(() => {
       setParticulas((prev) => prev.filter((p) => !nuevasParticulas.includes(p)));
-    }, 
-    300);
+    }, 300);
   };
 
   const manejarCambio = (e) => {
@@ -46,24 +45,27 @@ const ComparadorImagenes = () => {
       <p className="text-texto-secundario dark:text-texto-secundario-oscuro text-center mt-2 mb-4">
         {DatosComparadorImagenes.descripcion}
       </p>
+      <p className="text-texto dark:text-texto-oscuro text-sm text-center mt-2 mb-4 font-bold">
+        {DatosComparadorImagenes.descripcion2}
+      </p>
 
       {/* Contenedor de imágenes */}
       <div className="relative w-full aspect-square overflow-hidden rounded shadow-lg">
-        {/* Imagen de fondo (después) */}
+        {/* Imagen de fondo (Antes) */}
         <img
-          src={DatosComparadorImagenes.imagenDespues}
-          alt="Después"
+          src={DatosComparadorImagenes.imagenAntes}
+          alt="Antes"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* Imagen superior (antes) con máscara dinámica */}
+        {/* Imagen superior (Después) con máscara dinámica */}
         <div
           className="absolute inset-0 w-full h-full"
-          style={{ clipPath: `inset(0 ${100 - posicion}% 0 0)` }}
+          style={{ clipPath: `inset(0 0 0 ${posicion}%)` }}
         >
           <img
-            src={DatosComparadorImagenes.imagenAntes}
-            alt="Antes"
+            src={DatosComparadorImagenes.imagenDespues}
+            alt="Después"
             className="w-full h-full object-cover"
           />
         </div>
@@ -88,7 +90,7 @@ const ComparadorImagenes = () => {
               color: p.tipo === "despues" ? "#FFD700" : "#FF4500", // Dorado para estrellas, rojo para chispas
             }}
           >
-            {p.tipo === "despues" ? "🪄" : "💥"}
+            {p.tipo === "despues" ? "💥" : "🪄"}
           </div>
         ))}
 
