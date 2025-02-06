@@ -51,6 +51,11 @@ function App() {
                   <div className="space-y-24 py-16 md:py-20">
                     <div>
                     <Hero />
+                    <BannerPublicidad datos={DatosBannerPublicidad01} />
+                    </div>
+
+                    <div>
+                      <ComparadorImagenes datos={DatosComparadorImagenes} />
                     </div>
 
                     <div id="servicios" className="flex flex-col items-center">

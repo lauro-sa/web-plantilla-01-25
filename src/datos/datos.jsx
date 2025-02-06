@@ -45,7 +45,7 @@ export const DatosNavbar = {
     { texto: "Acerca", url: "/acerca" },
     { texto: "Contacto", url: "/contacto" }
   ],
-  mostrarSelectorDeTema: true
+  mostrarSelectorDeTema: false
 };
 
 
