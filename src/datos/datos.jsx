@@ -319,8 +319,8 @@ export const DatosModalContacto = {
 export const datosBotonWhatsApp = {
   enlaceBase: "https://wa.me/541124970311",
   mensajeInicial: "Hola, te contacto desde la web, quisiera más información sobre...",
-  textoAnimadoPC: "",
-  textoAnimadoMovil: "Escríbenos!",
+  textoAnimadoPC: "Hablamos?",
+  textoAnimadoMovil: "",
   iconos: {
     claro: iconoWhatsAppOscuro,
     oscuro: iconoWhatsAppOscuro
